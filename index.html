@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>Spotify</title>
+            <link rel="stylesheet" type="text/css" href="style.css" />
+        </head>
+
+        <body>
+            <div class="top">
+                <input type="text" name="user-input" />
+
+                <select class="artist-or-album">
+                    <option id="artist">artist</option>
+                    <option id="album">album</option>
+                </select>
+                <button class="submit-btn">Submit</button>
+            </div>
+
+            <p class="artistsResults"></p>
+            <div class="results-container">
+                <script id="spotifyData" type="text/x-handlebars-template">
+
+                        {{#items}}
+                        <div class="card">
+                            <a href={{external_urls/spotify}} target="_blank">
+                                {{name}}
+                            </a>
+
+                                {{#if images}}
+                                  <div class="image"></div>
+                                    <img
+                                        class="img"
+                                        src={{images/0/url}}
+                                        alt="img"
+                                    />
+                                {{else}}
+                                    <img
+                                        class="img"
+                                        src={{
+                                            "https://logopond.com/logos/1ea59358d028deb9cc65cf647a71a654.png"
+                                        }}
+                                    />
+                                {{/if}}
+                          </div>
+                        {{/items}}
+                    </div>
+                </script>
+            </div>
+
+            <button class="next">more results</button>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+            <script src="script.js"></script>
+        </body>
+    </html>
+</html>

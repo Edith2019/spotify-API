@@ -1,0 +1,127 @@
+* {
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    object-fit: cover;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+input[type="text"] {
+    padding: 5px;
+    height: 15vh;
+    width: 60vh;
+    margin: 25px;
+    font-size: 40px;
+    border-bottom: black 2px solid;
+    text-align: center;
+}
+
+.submit-btn {
+    height: 5vh;
+    width: 25vh;
+    margin: 15px;
+    font-size: 20px;
+    border-bottom: black 2px solid;
+    margin: 25px;
+    border-radius: 8%;
+}
+
+.artist-or-album {
+    height: 5vh;
+    width: 25vh;
+    margin: 15px;
+    font-size: 20px;
+    border-bottom: black 2px solid;
+    background-color: none;
+    margin: 25px;
+    margin-left: 350px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-color: white;
+}
+
+.artistsResults {
+    padding: 5px;
+    height: 5vh;
+    margin: 5px;
+    font-size: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    border: 2px black solid;
+}
+
+.results-container {
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50vh;
+    padding-top: 10px;
+}
+
+.resultsIMG {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 20px;
+    border-bottom: black;
+    align-items: center;
+}
+
+.resultsName {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-bottom: black;
+    align-items: center;
+    text-align: left;
+    font-size: 30px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+.next {
+    visibility: hidden;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    color: black;
+    font-size: 30px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
