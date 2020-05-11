@@ -8,7 +8,7 @@ Javascript // HTML// CSS// JSON// Spotify API// proxy
 - search for music 
 - select via artists or albums
 - load more result on click
-- infinite scroll
+
 
 # Demo
 
